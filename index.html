@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Portafolio Shantal Silva </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" type="text/javascript"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+    <div id="mensaje"> Welcome </div>
+    <script>
+        $(document).ready(function() {
+        $("#mensaje").fadeIn(2000).delay(2000).fadeOut(3000);
+        });
+    </script>
+    <div id="container">
+        <header>
+            <ul>
+                <li> <a href="#"> Home </a> </li>
+                <li> <a href="#about-me"> About me </a> </li>
+                <li> <a href="#contact"> Contact </a> </li>
+                <li> <a href="#cursos"> Certifications </a> </li>
+            </ul>
+        </header>
+        <nav>
+            <ul>
+                <li> 
+                    <a href="https://github.com/ShaneMS2098" target="_blank" rel="noopener"> 
+                        <img src="./Images/github.png" alt="GitHub" width="25" height="25">
+                    </a>
+                </li>
+                <li> 
+                    <a href="https://www.linkedin.com/in/shantal-silva/" target="_blank" rel="noopener"> 
+                        <img src="./Images/linkedin.png" alt="Linkedin" width="25" height="25">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <article id="about-me">
+            <h3> About me </h3>
+            <div id="personal-info">
+                <img src="./Images/foto-perfil.jpg" alt="foto-perfil"> 
+                <p> 
+                    Hello, my name is Shantal Silva and I am 24 years old. 
+                    I have been trained as a self-taught programmer and 
+                    I have had the opportunity to participate in programs such as Launch X and ONE (Oracle Next Education).
+                    Currently, I work as a Junior Front-end and I am focused on continuing my professional development
+                    and acquiring new skills. My portfolio includes relevant projects and achievements that reflect my passion
+                    for programming and my dedication to continuous learning.
+                </p>
+            </div>
+        </article>
+        <article id="cursos">
+            <h2> Licenses & certifications </h2>
+            <ul>
+                <li>
+                    <a href="https://1drv.ms/b/s!AoIlI_Tip4o1gQm0JOZph3dBJOR8?e=NlOR8o" target="_blank" rel="noopener">
+                        <img src="./Images/taller-code-innovation.png" alt="taller-code-innovation" id="images1" class="img1">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://community.open-bootcamp.com/user/shane2098/certificaciones/58bfede7-7385-4b23-a7c2-f3140fb9283b" target="_blank" rel="noopener">
+                        <img src="./Images/conceptos-programacion.png" alt="taller-code-innovation" id="images1" class="img1">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://coursera.org/share/e093ffdb652b1782abdda6f9c5730f03" target="_blank" rel="noopener">
+                        <img src="./Images/curso-english.png" alt="curso-english" id="images1" class="img1">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://coursera.org/share/b59020e0f818ffe02bc1fffa8bcee98b" target="_blank" rel="noopener">
+                        <img src="./Images/curso-chino.png" alt="taller-code-innovation" id="images1" class="img1">
+                    </a>
+                </li>
+            </ul>
+        </article>
+        <article id="projects">
+
+        </article>
+        <article id="contact" class="container-form">
+            <h3> Contact</h3>
+            <form id="contact-form" action="https://formspree.io/f/xjvdbzjp" method="post">
+                <label for="name"> Name: </label>
+                <input type="text" id="name" name="name" required>
+                <br>
+                <label for="email"> Email: </label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <label for="message"> Message: </label>
+                <textarea id="message" name="message" required></textarea>
+                <br>
+                <div class="g-recaptcha" data-sitekey=""></div>
+                <button type="submit">Enviar</button>
+            </form>
+            <div id="response"></div>
+        </article>
+        <footer>
+            <p> @Shantal 2022</p>
+        </footer>
+    </div>
+</body>
+<script src="index.js" type="text/javascript"></script>
+</html>
