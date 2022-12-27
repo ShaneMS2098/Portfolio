@@ -6,8 +6,8 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 #images1 {
-    width: 700px;
-    height: 500px;
+    width: 43.75rem;
+    height: 31.25rem;
     display: none;
 }
 #images1first-child {
@@ -58,16 +58,19 @@ header li:hover {
     font-size: 1.25rem;
 }
 #about-me {
-    color: rgb(233, 230, 230);
+    color: black;
     width: max-content;
     height: max-content;
     margin: auto;
+    background: linear-gradient(to right, #FFA69E , #FF686B, #7DDE92, #FF8966);
+    border-radius: 20px;
 }
 #about-me h3 {
     width: max-content;
     height: max-content;
     text-align: center;
     margin: auto;
+    padding-top: 2%;
 }
 #personal-info {
     display: flex;
@@ -80,11 +83,14 @@ header li:hover {
     margin-left: 3%;
     margin-top: auto;
     margin-bottom: auto;
+    padding-right: 2%;
 }
 #personal-info img {
     width: 17rem;
     height: 17rem;
     border-radius: 50%;
+    padding-left: 2%;
+    padding-bottom: 2%;
 }
 footer {
     background: linear-gradient(to right, #222E50, #726DA8, #B8336A, #0C7C59);
@@ -125,9 +131,33 @@ nav img:hover {
     height: 2.5rem;
 }
 .container-form {
-    background-color: #25A18E;
+    background-image: url(./Images/background-stars.png);
     display: block;
+    width: max-content;
+    height: max-content;
+    text-align: center;
+    margin: auto;
+    padding-top: 2%;
+    color: #D5B0AC;
+}
+.container-form h3 {
+    font-size: 2rem;
 }
 #contact-form {
-    width: 12rem;
+    width: fit-content;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+}
+#contact-form input, textarea{
+    width: 15rem;
+}
+
+#name, #email, #message {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+#contact-form label {
+    font-weight: 700;
 }
