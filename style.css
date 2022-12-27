@@ -58,7 +58,7 @@ header li:hover {
     font-size: 1.25rem;
 }
 #about-me {
-    color: black;
+    color: #375d72;
     width: max-content;
     height: max-content;
     margin: auto;
@@ -72,6 +72,7 @@ header li:hover {
     text-align: center;
     margin: auto;
     padding-top: 2%;
+    font-size: 2rem;
 }
 #personal-info {
     display: flex;
@@ -85,6 +86,7 @@ header li:hover {
     margin-top: auto;
     margin-bottom: auto;
     padding-right: 2%;
+    font-weight: 600;
 }
 #personal-info img {
     width: 17rem;
@@ -107,12 +109,14 @@ footer p {
 }
 #mensaje {
     background-color: gray;
-    color: azure;
+    color: rgb(20, 207, 167);
     position: fixed;
     width: 100%;
     height: 100%;
     font-size: 15rem;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 nav {
     background-color: #25A18E;
