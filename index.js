@@ -5,7 +5,7 @@ window.onload = function () {
         images[i].style.display = 'none';
         i = (i + 1) % images.length;
         images[i].style.display = 'block';
-    }, 3000);
+    }, 2500);
 }
 const form = document.getElementById('contact-form');
 const responseContainer = document.getElementById('response');
