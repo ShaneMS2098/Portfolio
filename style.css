@@ -69,7 +69,7 @@ nav img:hover {
     margin-top: 2%;
 }
 #about-me h3 {
-    width: max-content;
+    width: 100%;
     height: max-content;
     text-align: center;
     margin: auto;
@@ -82,20 +82,20 @@ nav img:hover {
     height: 100%;
 }
 #personal-info p {
-    width: 30rem;
+    width: 80%;
+    height: 100%;
     text-align: center;
     margin-left: 3%;
     margin-top: auto;
     margin-bottom: auto;
-    padding-right: 2%;
     font-weight: 600;
 }
-#personal-info img {
+#my-photo {
     width: 17rem;
     height: 17rem;
-    border-radius: 50%;
-    padding-left: 2%;
-    padding-bottom: 2%;
+    border-radius: 200px;
+    /* padding-bottom: 2%; */
+    margin: auto;
 }
 #knowledge {
     width: 100%;
@@ -247,7 +247,7 @@ footer p {
     font-weight: 600;
 }
 
-@media (max-width: 905px) {
+@media (max-width: 905px) and (min-width: 701px) {
     #mensaje {
         font-size: 10rem;
     }
@@ -256,9 +256,10 @@ footer p {
         height: 70%;
         font-size: 85%;
     }
-    #personal-info img {
+    #my-photo {
         width: 12rem;
         height: 12rem;
+        margin: auto;
     }
     #personal-info p {
         height: max-content;
@@ -310,10 +311,107 @@ footer p {
         width: 38rem;
         height: 28rem;
     }
-
     #projects h3{
         padding-top: 8%;
         padding-bottom: 5%;
     }
+}
 
+@media (max-width:700px) {
+    #mensaje {
+        font-size: 6rem;
+    }
+    #about-me {
+        display: block;
+        width: 80%;
+        height: 100%;
+    }
+    #personal-info {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+    }
+    #personal-info p {
+        width: 90%;
+        height: 100%;
+        margin: auto;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+    #my-photo {
+        width: 12rem;
+        height: 12rem;
+        margin: auto;
+    }
+    #knowledge img {
+        opacity: 0.1;
+        width: 7.5rem;
+        height: 7.5rem;
+    }
+    #knowledge img:hover {
+        width: 8.5rem;
+        height: 8.5rem;
+    }
+    #list-courses {
+        padding: 0;
+    }
+    #container-rail {
+        display: block;
+        width: 100%;
+        height: max-content;
+    }
+    #thumbnails {
+        width: 100%;
+        background-color:currentColor;
+    }
+    #thumbnails button {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    #thumbnails ul{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .complete-image {
+        width: 36rem;
+        height: 26rem;
+        max-height: 60%;
+        max-width: 100%;
+        padding-left: 0%;
+    }
+    #projects {
+        margin: auto;
+    }
+    #projects img {
+        width: 38rem;
+        height: 28rem;
+    }
+    #projects h3{
+        padding-top: 8%;
+        padding-bottom: 5%;
+    }
+    header {
+        width: 100%;
+        height: 4rem;
+        margin: auto;
+    }
+    header ul {
+        display: flex;
+        width: 100%;
+        height: 10%;
+        margin: auto;
+    }
+    header li {
+        margin: auto;
+    }
+    header li a {
+        font-size: 0.9rem;
+    }
 }
