@@ -10,6 +10,12 @@ const thumbnail7 = document.getElementById('thumbnail7');
 let i = 0;
 let n = 0;
 
+/**
+ * Presentación de imágenes y miniaturas correspondientes
+ * @param {Array} images - Las imágenes a mostrar en la presentación
+ * @param {Array} thumbnails - Las miniaturas correspondientes a las imágenes
+ * @param {number} interval - El intervalo entre transiciones de la presentación en milisegundos
+ */
 setInterval(function () {
   images[i].style.display = 'none';
   thumbnails[n].style.border = 'none';
@@ -19,7 +25,12 @@ setInterval(function () {
   thumbnails[n].style.border = '4px solid pink'
 }, 4000);
 
-
+/**
+ * Muestra la primera imagen del rail y su miniatura y oculta el resto cuando se hace clic en thumbnail1
+ * @param {HTMLElement} thumbnail1 - El elemento thumbnail1 al que se le agrega el manejador de evento
+ * @param {Array} images - Las imágenes a mostrar7ocultar en la presentación
+ * @param {Array} thumbnails - Las miniaturas a mostrar/ocultar en la presentación
+ */
 thumbnail1.addEventListener('click', () => {
   i = 0;
   n = 0;
@@ -111,6 +122,12 @@ thumbnail7.addEventListener('click', () => {
   thumbnails[n].style.border = '4px solid pink';
 });
 
+
+/**
+ * Envía un formulario de contacto utilizando la biblioteca fetch.
+ * @param {HTMLFormElement} form - El formulario de contacto
+ * @param {HTMLElement} responseContainer -El elemento donde se mostrará el resultado del envío del formulario
+ */
 const form = document.getElementById('contact-form');
 const responseContainer = document.getElementById('response');
 form.addEventListener('submit', (event) => {
