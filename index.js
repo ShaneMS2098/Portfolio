@@ -111,9 +111,6 @@ thumbnail7.addEventListener('click', () => {
   thumbnails[n].style.border = '4px solid pink';
 });
 
-
-
-
 const form = document.getElementById('contact-form');
 const responseContainer = document.getElementById('response');
 form.addEventListener('submit', (event) => {
