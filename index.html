@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Portfolio Shantal Silva </title>
     <link rel="stylesheet" href="style.css">
-    <script src="index.js" type="text/javascript"></script>
+    <script src="index.js" type="text/javascript" defer></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="shortcut icon" href="./Images/portafolio.png" type="image/x-icon">
 
@@ -64,43 +64,85 @@
         </div>
         <article id="cursos">
             <h2> Licenses & certifications </h2>
-            <ul>
-                <li>
-                    <a href="https://1drv.ms/b/s!AoIlI_Tip4o1gQm0JOZph3dBJOR8?e=NlOR8o" target="_blank" rel="noopener">
-                        <img src="./Images/taller-code-innovation.png" alt="taller-code-innovation" id="images1" class="img1">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://community.open-bootcamp.com/user/shane2098/certificaciones/58bfede7-7385-4b23-a7c2-f3140fb9283b" target="_blank" rel="noopener">
-                        <img src="./Images/conceptos-programacion.png" alt="taller-code-innovation" id="images1" class="img1">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://coursera.org/share/e093ffdb652b1782abdda6f9c5730f03" target="_blank" rel="noopener">
-                        <img src="./Images/curso-english.png" alt="curso-english" id="images1" class="img1">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://coursera.org/share/b59020e0f818ffe02bc1fffa8bcee98b" target="_blank" rel="noopener">
-                        <img src="./Images/curso-chino.png" alt="taller-code-innovation" id="images1" class="img1">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://app.aluracursos.com/certificate/aaed1d26-cbe0-47e5-96d6-d4bf1c76e126" target="_blank" rel="noopener">
-                        <img src="./Images/curso-logica-juegos.png" alt="corso curso-logica-juegos" id="images1" class="img1">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://app.aluracursos.com/certificate/e2d5d204-0ecb-4304-b211-b7e40b91a3ab" target="_blank" rel="noopener">
-                        <img src="./Images/curso-logica-conceptos.png" alt="curso-logica-conceptos" id="images1" class="img1">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://app.aluracursos.com/certificate/2ae0e51c-31a9-4a15-8c08-d49960653868" target="_blank" rel="noopener">
-                        <img src="./Images/curso-logica-first.png" alt="curso-logica-primer" id="images1" class="img1">
-                    </a>
-                </li>
-            </ul>
+            <div id="container-rail">
+                <div id="thumbnails">
+                    <ul>
+                        <li>
+                            <button id="thumbnail1">
+                                <img src="./Images/taller-code-innovation.png" alt="taller-code-innovation" class="thumbnail">
+                            </button>
+                        </li>
+                        <li>
+                            <button id="thumbnail2">
+                                <img src="./Images/conceptos-programacion.png" alt="taller-code-innovation" class="thumbnail" id="thumbnail2">
+                            </button>
+                        </li>
+                        <li>
+                            <button id="thumbnail3">
+                                <img src="./Images/curso-english.png" alt="curso-english" class="thumbnail" id="thumbnail3">
+                            </button>
+                        </li>
+                        <li>
+                            <button id="thumbnail4">
+                                <img src="./Images/curso-chino.png" alt="taller-code-innovation" class="thumbnail" id="thumbnail4">
+                            </button>
+                        </li>
+                        <li>
+                            <button id="thumbnail5">
+                                <img src="./Images/curso-logica-juegos.png" alt="corso curso-logica-juegos" class="thumbnail" id="thumbnail5">
+                            </button>                        </li>
+                        <li>
+                            <button id="thumbnail6">
+                                <img src="./Images/curso-logica-conceptos.png" alt="curso-logica-conceptos" class="thumbnail" id="thumbnail6">
+                            </button>
+                        </li>
+                        <li>
+                            <button id="thumbnail7">
+                                <img src="./Images/curso-logica-first.png" alt="curso-logica-primer" class="thumbnail" id="thumbnail7">
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <ul>
+                    <li>
+                        <a href="https://1drv.ms/b/s!AoIlI_Tip4o1gQm0JOZph3dBJOR8?e=NlOR8o" target="_blank" rel="noopener">
+                            <img src="./Images/taller-code-innovation.png" alt="taller-code-innovation" id="images1" class="complete-image">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://community.open-bootcamp.com/user/shane2098/certificaciones/58bfede7-7385-4b23-a7c2-f3140fb9283b" target="_blank" rel="noopener">
+                            <img src="./Images/conceptos-programacion.png" alt="taller-code-innovation" id="images2" class="complete-image">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://coursera.org/share/e093ffdb652b1782abdda6f9c5730f03" target="_blank" rel="noopener">
+                            <img src="./Images/curso-english.png" alt="curso-english" id="images3" class="complete-image">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://coursera.org/share/b59020e0f818ffe02bc1fffa8bcee98b" target="_blank" rel="noopener">
+                            <img src="./Images/curso-chino.png" alt="taller-code-innovation" id="images4" class="complete-image">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://app.aluracursos.com/certificate/aaed1d26-cbe0-47e5-96d6-d4bf1c76e126" target="_blank" rel="noopener">
+                            <img src="./Images/curso-logica-juegos.png" alt="corso curso-logica-juegos" id="images5" class="complete-image">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://app.aluracursos.com/certificate/e2d5d204-0ecb-4304-b211-b7e40b91a3ab" target="_blank" rel="noopener">
+                            <img src="./Images/curso-logica-conceptos.png" alt="curso-logica-conceptos" id="images6" class="complete-image">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://app.aluracursos.com/certificate/2ae0e51c-31a9-4a15-8c08-d49960653868" target="_blank" rel="noopener">
+                            <img src="./Images/curso-logica-first.png" alt="curso-logica-primer" id="images7" class="complete-image">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+           
+            
         </article>
         <article id="projects">
             <h3> Projects </h3>

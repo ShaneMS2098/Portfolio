@@ -5,34 +5,19 @@ body {
     background-image: url(./Images/background-stars.gif);
     font-family: Arial, Helvetica, sans-serif;
 }
-#images1 {
-    width: 44.75rem;
-    height: 34.25rem;
-    display: none;
-    margin-top: 2%;
-}
-#images1first-child {
-    display: block;
-}
 li {
     list-style: none;
 }
-#cursos {
-    height: 37rem;
-}
-#cursos ul, #cursos li {
-    width: fit-content;
-    height: fit-content;
-    margin: auto;
-}
-#cursos h2 {
-    width: 20rem;
-    height: fit-content;
-    margin: auto;
-    text-align: center;
-    color: white;
-    padding-top: 0.7rem;
-    padding-bottom: 0.7rem;
+#mensaje {
+    background-color: gray;
+    color: rgb(20, 207, 167);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    font-size: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 header {
     background-color: #5e57689a;
@@ -56,6 +41,23 @@ header li a {
 header li:hover {
     background-color: #d17e8f;
     font-size: 1.25rem;
+}
+nav {
+    background-color: #25A18E;
+    position: fixed;
+    border-radius: 20px;
+    top: 250px;
+}
+nav ul {
+    margin: 0;
+    padding-right: 5px;
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+}
+nav img:hover {
+    width: 2.5rem;
+    height: 2.5rem;
 }
 #about-me {
     color: #375d72;
@@ -95,45 +97,93 @@ header li:hover {
     padding-left: 2%;
     padding-bottom: 2%;
 }
-footer {
-    background: linear-gradient(to right, #222E50, #726DA8, #B8336A, #0C7C59);
-    color: #A0D2DB;
+#knowledge {
+    width: 80rem;
+    background-color: rgba(255, 255, 255, 0.199);
+    height: max-content;
+    margin: auto;
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 2%;
 }
-footer p {
+#knowledge h3{
+    padding-top: 2%;
+}
+#knowledge img {
+    opacity: 0.1;
+    width: 10rem;
+    height: 10rem;
+    padding-top: 1%;
+    padding-bottom: 2%;
+}
+#knowledge img:hover {
+    width: 11rem;
+    height: 11rem;
+    opacity: 0.7;
+}
+#cursos {
+    width: max-content;
+    height: 37rem;
+    margin: auto;
+}
+#cursos ul, #cursos li {
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+}
+#cursos h2 {
+    width: 20rem;
+    height: fit-content;
+    margin: auto;
+    text-align: center;
+    color: white;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+}
+#container-rail {
+    display: flex;
+}
+#thumbnails {
     width: max-content;
     height: max-content;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    display: inline-block;
+    background-color: rgba(238, 238, 238, 0.651);
+    margin-top: auto;
+    margin-bottom: auto;
+}
+#thumbnails ul {
+    padding-left: 0;
+}
+.thumbnail {
+    width: 6rem;
+    height: 4rem;
+}
+.complete-image {
+    width: 44.75rem;
+    height: 34.25rem;
+    margin-top: 2%;
+    display: none;
+}
+#images1 {
+    display: block;
+}
+
+#projects {
+    width: max-content;
+    height: max-content;
     margin: auto;
-    font-weight: 600;
+    color: white;
 }
-#mensaje {
-    background-color: gray;
-    color: rgb(20, 207, 167);
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    font-size: 15rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+#projects h3{
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
-nav {
-    background-color: #25A18E;
-    position: fixed;
-    border-radius: 20px;
-    top: 250px;
-}
-nav ul {
-    margin: 0;
-    padding-right: 5px;
-    padding-top: 10px;
-    padding-left: 5px;
-    padding-bottom: 5px;
-}
-nav img:hover {
-    width: 2.5rem;
-    height: 2.5rem;
+#projects img {
+    width: 60rem;
+    height: 32rem;
 }
 .container-form {
     background-color: #2dd3cb80;
@@ -180,44 +230,15 @@ nav img:hover {
 #contact-form label {
     font-weight: 700;
 }
-#projects {
+footer {
+    background: linear-gradient(to right, #222E50, #726DA8, #B8336A, #0C7C59);
+    color: #A0D2DB;
+}
+footer p {
     width: max-content;
     height: max-content;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     margin: auto;
-    color: white;
-}
-#projects h3{
-    font-size: 2rem;
-    text-align: center;
-    padding-top: 5%;
-    padding-bottom: 5%;
-}
-#projects img {
-    width: 60rem;
-    height: 32rem;
-}
-#knowledge {
-    width: 80rem;
-    background-color: rgba(255, 255, 255, 0.199);
-    height: max-content;
-    margin: auto;
-    color: white;
-    text-align: center;
-    border-radius: 20px;
-    margin-top: 2%;
-}
-#knowledge h3{
-    padding-top: 2%;
-}
-#knowledge img {
-    opacity: 0.1;
-    width: 10rem;
-    height: 10rem;
-    padding-top: 1%;
-    padding-bottom: 2%;
-}
-#knowledge img:hover {
-    width: 11rem;
-    height: 11rem;
-    opacity: 0.7;
+    font-weight: 600;
 }

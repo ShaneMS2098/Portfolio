@@ -1,15 +1,121 @@
-window.onload = function () {
-    const images = document.querySelectorAll('.img1');
-    let i = 0;
-    setInterval(function() {
-        images[i].style.display = 'none';
-        i = (i + 1) % images.length;
-        images[i].style.display = 'block';
-    }, 2500);
-}
+const images = document.querySelectorAll('.complete-image');
+const thumbnails = document.querySelectorAll('.thumbnail');
+const thumbnail1 = document.getElementById('thumbnail1');
+const thumbnail2 = document.getElementById('thumbnail2');
+const thumbnail3 = document.getElementById('thumbnail3');
+const thumbnail4 = document.getElementById('thumbnail4');
+const thumbnail5 = document.getElementById('thumbnail5');
+const thumbnail6 = document.getElementById('thumbnail6');
+const thumbnail7 = document.getElementById('thumbnail7');
+let i = 0;
+let n = 0;
+
+setInterval(function () {
+  images[i].style.display = 'none';
+  thumbnails[n].style.border = 'none';
+  i = (i + 1) % images.length;
+  n = (n + 1) % thumbnails.length;
+  images[i].style.display = 'block';
+  thumbnails[n].style.border = '4px solid pink'
+}, 4000);
+
+
+thumbnail1.addEventListener('click', () => {
+  i = 0;
+  n = 0;
+  images.forEach(image => {
+    image.style.display = 'none';
+  });
+  images[i].style.display = 'block';
+  thumbnails.forEach(thumbnail => {
+    thumbnail.style.border = 'none';
+  });
+  thumbnails[n].style.border = '4px solid pink';
+});
+
+thumbnail2.addEventListener('click', () => {
+  i = 1;
+  n = 1;
+  images.forEach(image => {
+    image.style.display = 'none';
+  });
+  images[i].style.display = 'block';
+  thumbnails.forEach(thumbnail => {
+    thumbnail.style.border = 'none';
+  });
+  thumbnails[n].style.border = '4px solid pink';
+});
+
+thumbnail3.addEventListener('click', () => {
+  i = 2;
+  n = 2;
+  images.forEach(image => {
+    image.style.display = 'none';
+  });
+  images[i].style.display = 'block';
+  thumbnails.forEach(thumbnail => {
+    thumbnail.style.border = 'none';
+  });
+  thumbnails[n].style.border = '4px solid pink';
+});
+
+thumbnail4.addEventListener('click', () => {
+  i = 3;
+  n = 3;
+  images.forEach(image => {
+    image.style.display = 'none';
+  });
+  images[i].style.display = 'block';
+  thumbnails.forEach(thumbnail => {
+    thumbnail.style.border = 'none';
+  });
+  thumbnails[n].style.border = '4px solid pink';
+});
+
+thumbnail5.addEventListener('click', () => {
+  i = 4;
+  n = 4;
+  images.forEach(image => {
+    image.style.display = 'none';
+  });
+  images[i].style.display = 'block';
+  thumbnails.forEach(thumbnail => {
+    thumbnail.style.border = 'none';
+  });
+  thumbnails[n].style.border = '4px solid pink';
+});
+
+thumbnail6.addEventListener('click', () => {
+  i = 5;
+  n = 5;
+  images.forEach(image => {
+    image.style.display = 'none';
+  });
+  images[i].style.display = 'block';
+  thumbnails.forEach(thumbnail => {
+    thumbnail.style.border = 'none';
+  });
+  thumbnails[n].style.border = '4px solid pink';
+});
+
+thumbnail7.addEventListener('click', () => {
+  i = 6;
+  n = 6;
+  images.forEach(image => {
+    image.style.display = 'none';
+  });
+  images[i].style.display = 'block';
+  thumbnails.forEach(thumbnail => {
+    thumbnail.style.border = 'none';
+  });
+  thumbnails[n].style.border = '4px solid pink';
+});
+
+
+
+
 const form = document.getElementById('contact-form');
 const responseContainer = document.getElementById('response');
-
 form.addEventListener('submit', (event) => {
   event.preventDefault();
 
@@ -39,5 +145,3 @@ form.addEventListener('submit', (event) => {
       responseContainer.innerHTML = 'Ocurrió un error al enviar el mensaje';
     });
 });
-
-  
