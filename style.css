@@ -42,20 +42,20 @@ header li:hover {
     background-color: #d17e8f;
     font-size: 1.25rem;
 }
-nav {
+#social {
     background-color: #25A18E;
     position: fixed;
     border-radius: 20px;
     top: 250px;
 }
-nav ul {
+#social ul {
     margin: 0;
     padding-right: 5px;
     padding-top: 10px;
     padding-left: 5px;
     padding-bottom: 5px;
 }
-nav img:hover {
+#social img:hover {
     width: 2.5rem;
     height: 2.5rem;
 }
@@ -235,6 +235,7 @@ nav img:hover {
     font-weight: 700;
 }
 footer {
+    width: 100%;
     background: linear-gradient(to right, #222E50, #726DA8, #B8336A, #0C7C59);
     color: #A0D2DB;
 }
@@ -326,6 +327,23 @@ footer p {
         width: 80%;
         height: 100%;
     }
+    header {
+        width: 100%;
+        height: 4rem;
+        margin: auto;
+    }
+    header ul {
+        display: flex;
+        width: 100%;
+        height: 10%;
+        margin: auto;
+    }
+    header li {
+        margin: auto;
+    }
+    header li a {
+        font-size: 0.9rem;
+    }
     #personal-info {
         display: flex;
         flex-direction: row;
@@ -397,6 +415,88 @@ footer p {
         padding-top: 8%;
         padding-bottom: 5%;
     }
+
+}
+@media (max-width:450px) {
+    #mensaje {
+        font-size: 6rem;
+    }
+    #about-me {
+        display: block;
+        width: 80%;
+        height: 100%;
+    }
+    #personal-info {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+    }
+    #personal-info p {
+        width: 90%;
+        height: 100%;
+        margin: auto;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+    #my-photo {
+        width: 12rem;
+        height: 12rem;
+        margin: auto;
+    }
+    #knowledge img {
+        opacity: 0.1;
+        width: 4rem;
+        height: 4rem;
+    }
+    #knowledge img:hover {
+        width: 8.5rem;
+        height: 8.5rem;
+    }
+    #list-courses {
+        padding: 0;
+    }
+    #container-rail {
+        display: block;
+        width: 100%;
+        height: max-content;
+    }
+    #thumbnails {
+        width: 100%;
+        background-color:currentColor;
+    }
+    #thumbnails button {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    #thumbnails ul{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .complete-image {
+        width: 20rem;
+        height: 20rem;
+        max-height: 60%;
+        max-width: 100%;
+        padding-left: 0%;
+    }
+    #projects {
+        margin: 8% auto;
+    }
+    #projects img {
+        width: 38rem;
+        height: 32rem;
+    }
+    #projects h3{
+        padding-top: 8%;
+        padding-bottom: 5%;
+    }
     header {
         width: 100%;
         height: 4rem;
@@ -412,6 +512,6 @@ footer p {
         margin: auto;
     }
     header li a {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 }
