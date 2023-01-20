@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Portfolio Shantal Silva </title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./CSS/reset.css">
+    <link rel="stylesheet" href="./CSS/style.css">
     <script src="index.js" type="text/javascript" defer></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="shortcut icon" href="./Images/portafolio.png" type="image/x-icon">
@@ -147,12 +148,19 @@
            
             
         </article>
-        <article id="projects">
+        <section id="projects">
             <h3> Projects </h3>
-            <a href="https://shanems2098.github.io/Encriptador-texto/" target="_blank" rel="noopener">
+            <!-- <a href="https://shanems2098.github.io/Encriptador-texto/" target="_blank" rel="noopener">
                 <img src="./Images/Vista-previa-encriptador.png" alt="Encriptador-texto">
-            </a>
-        </article>
+            </a> -->
+            <article class="list-projects">
+                <ul>
+                    <li class="li-proyectos" id="proyecto1">
+                        <img src="./Images/encriptado.png" alt="Candado" class="candado"><button class="encriptador"> Encriptador de texto</button>
+                    </li>
+                </ul>
+            </article>
+        </section>
         <article id="contact" class="container-form">
             <h3> Contact </h3>
             <form id="contact-form" action="https://formspree.io/f/xjvdbzjp" method="post">
