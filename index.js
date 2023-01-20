@@ -10,6 +10,11 @@ const thumbnail7 = document.getElementById('thumbnail7');
 let i = 0;
 let n = 0;
 
+document.querySelector('.encriptador').addEventListener('click', () => {
+  window.open('https://shanems2098.github.io/Encriptador-texto/', '_blank');
+});
+
+
 /**
  * Presentación de imágenes y miniaturas correspondientes
  * @param {Array} images - Las imágenes a mostrar en la presentación

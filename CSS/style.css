@@ -193,6 +193,8 @@ header li:hover {
     padding: 1% 5%;
     background-color: #0a3871;
     cursor: pointer;
+    color: white;
+    font-weight: 600;
 }
 .li-proyectos {
     width: 100%;
